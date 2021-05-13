@@ -12,6 +12,10 @@
 		6DB04D9F264D8D5100AD1266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB04D9D264D8D5100AD1266 /* Main.storyboard */; };
 		6DB04DA1264D8D5200AD1266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB04DA0264D8D5200AD1266 /* Assets.xcassets */; };
 		6DB04DA4264D8D5200AD1266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB04DA2264D8D5200AD1266 /* LaunchScreen.storyboard */; };
+		6DB04DBC264DA3D000AD1266 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB04DBB264DA3D000AD1266 /* StartViewController.swift */; };
+		6DB04DBF264DAA6E00AD1266 /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB04DBE264DAA6E00AD1266 /* RatesViewController.swift */; };
+		6DB04DC4264DACBC00AD1266 /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB04DC2264DACBC00AD1266 /* RateTableViewCell.swift */; };
+		6DB04DC5264DACBC00AD1266 /* RateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB04DC3264DACBC00AD1266 /* RateTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		6DB04DA0264D8D5200AD1266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DB04DA3264D8D5200AD1266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DB04DA5264D8D5200AD1266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB04DBB264DA3D000AD1266 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		6DB04DBE264DAA6E00AD1266 /* RatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
+		6DB04DC2264DACBC00AD1266 /* RateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
+		6DB04DC3264DACBC00AD1266 /* RateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,7 @@
 		6DB04DB0264D8E8300AD1266 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				6DB04DC1264DAC9A00AD1266 /* XIBs */,
 				6DB04DB2264D8EA100AD1266 /* Storyboards */,
 				6DB04DB3264D8EB100AD1266 /* ViewControllers */,
 			);
@@ -108,8 +117,19 @@
 		6DB04DB3264D8EB100AD1266 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6DB04DBB264DA3D000AD1266 /* StartViewController.swift */,
+				6DB04DBE264DAA6E00AD1266 /* RatesViewController.swift */,
+				6DB04DC2264DACBC00AD1266 /* RateTableViewCell.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6DB04DC1264DAC9A00AD1266 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				6DB04DC3264DACBC00AD1266 /* RateTableViewCell.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DB04DA4264D8D5200AD1266 /* LaunchScreen.storyboard in Resources */,
+				6DB04DC5264DACBC00AD1266 /* RateTableViewCell.xib in Resources */,
 				6DB04DA1264D8D5200AD1266 /* Assets.xcassets in Resources */,
 				6DB04D9F264D8D5100AD1266 /* Main.storyboard in Resources */,
 			);
@@ -184,6 +205,9 @@
 			files = (
 				6DB04D98264D8D5100AD1266 /* AppDelegate.swift in Sources */,
 				6DB04D9A264D8D5100AD1266 /* SceneDelegate.swift in Sources */,
+				6DB04DBF264DAA6E00AD1266 /* RatesViewController.swift in Sources */,
+				6DB04DC4264DACBC00AD1266 /* RateTableViewCell.swift in Sources */,
+				6DB04DBC264DA3D000AD1266 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AA878A43SR;
-				INFOPLIST_FILE = "Exchange Rates/Info.plist";
+				INFOPLIST_FILE = "Exchange Rates/Environments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AA878A43SR;
-				INFOPLIST_FILE = "Exchange Rates/Info.plist";
+				INFOPLIST_FILE = "Exchange Rates/Environments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
