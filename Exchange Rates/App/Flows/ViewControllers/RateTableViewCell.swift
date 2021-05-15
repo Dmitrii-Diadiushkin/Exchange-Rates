@@ -9,15 +9,23 @@ import UIKit
 
 class RateTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet private weak var currencyName: UILabel!
+    @IBOutlet private weak var exchangeLabel: UILabel!
+    @IBOutlet weak var rateLabel: UILabel!
+    
+    func setupCell(rate: Rate) {
+        
+        let exchangeText = "\(rate.currMnemFrom.rawValue)(код \(rate.from)) / \(rate.currMnemTo)(код \(rate.to)) \(rate.basic) ед."
+        let exchangeRates = "Продажа \(rate.sale) дельта \(rate.deltaSale)\nПокупка \(rate.buy) дельта \(rate.deltaBuy)"
+        currencyName.text = rate.name
+        exchangeLabel.text = exchangeText
+        rateLabel.text = exchangeRates
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        currencyName.text = ""
+        exchangeLabel.text = ""
+        rateLabel.text = ""
+    }
 }

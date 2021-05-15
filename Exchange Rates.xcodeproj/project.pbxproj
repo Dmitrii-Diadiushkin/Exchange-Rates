@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D1635082650042B000DA61B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1635072650042B000DA61B /* NetworkManager.swift */; };
+		6D16350B26502274000DA61B /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D16350A26502274000DA61B /* CurrencyRates.swift */; };
+		6D163510265022B0000DA61B /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D16350F265022B0000DA61B /* Rate.swift */; };
 		6DB04D98264D8D5100AD1266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB04D97264D8D5100AD1266 /* AppDelegate.swift */; };
 		6DB04D9A264D8D5100AD1266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB04D99264D8D5100AD1266 /* SceneDelegate.swift */; };
 		6DB04D9F264D8D5100AD1266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB04D9D264D8D5100AD1266 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D1635072650042B000DA61B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6D16350A26502274000DA61B /* CurrencyRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
+		6D16350F265022B0000DA61B /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		6DB04D94264D8D5100AD1266 /* Exchange Rates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exchange Rates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB04D97264D8D5100AD1266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DB04D99264D8D5100AD1266 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D163504264FFEBF000DA61B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6DB04D97264D8D5100AD1266 /* AppDelegate.swift */,
+				6DB04D99264D8D5100AD1266 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		6D1635052650036E000DA61B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D16350D26502283000DA61B /* Entity */,
+				6D16350626500409000DA61B /* Managers */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D16350626500409000DA61B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6D1635072650042B000DA61B /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6D16350D26502283000DA61B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6D16350E2650229A000DA61B /* Currency Rates */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		6D16350E2650229A000DA61B /* Currency Rates */ = {
+			isa = PBXGroup;
+			children = (
+				6D16350A26502274000DA61B /* CurrencyRates.swift */,
+				6D16350F265022B0000DA61B /* Rate.swift */,
+			);
+			path = "Currency Rates";
+			sourceTree = "<group>";
+		};
 		6DB04D8B264D8D5100AD1266 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +113,7 @@
 			children = (
 				6DB04DAE264D8DD600AD1266 /* App */,
 				6DB04DAD264D8DC800AD1266 /* Environments */,
+				6D1635052650036E000DA61B /* Models */,
 				6DB04DAF264D8DDB00AD1266 /* Resources */,
 			);
 			path = "Exchange Rates";
@@ -80,9 +130,8 @@
 		6DB04DAE264D8DD600AD1266 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				6D163504264FFEBF000DA61B /* Delegates */,
 				6DB04DB0264D8E8300AD1266 /* Flows */,
-				6DB04D97264D8D5100AD1266 /* AppDelegate.swift */,
-				6DB04D99264D8D5100AD1266 /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -203,8 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1635082650042B000DA61B /* NetworkManager.swift in Sources */,
+				6D163510265022B0000DA61B /* Rate.swift in Sources */,
 				6DB04D98264D8D5100AD1266 /* AppDelegate.swift in Sources */,
 				6DB04D9A264D8D5100AD1266 /* SceneDelegate.swift in Sources */,
+				6D16350B26502274000DA61B /* CurrencyRates.swift in Sources */,
 				6DB04DBF264DAA6E00AD1266 /* RatesViewController.swift in Sources */,
 				6DB04DC4264DACBC00AD1266 /* RateTableViewCell.swift in Sources */,
 				6DB04DBC264DA3D000AD1266 /* StartViewController.swift in Sources */,
